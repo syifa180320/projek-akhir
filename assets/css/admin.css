@@ -1,0 +1,552 @@
+.sidebar-bottom {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;   /*dorong burung ke bawah */
+}
+.menu {
+  flex: 1;         
+}
+.logo-bawah {
+  text-align: center; /* logo burung bth */
+  padding: 10px;
+}
+.bird {
+  width: 200px;
+}
+
+
+
+.profile-header h4{
+    font-size:20px !important;
+    font-weight:400 !important;
+}
+
+.info-title{
+    font-size:20px !important;
+    font-weight:400 !important;
+}
+
+.profile-name{
+    font-size:18px !important;
+}
+
+.profile-role{
+    font-size:14px !important;
+}
+
+.profile-status{
+    font-size:13px !important;
+}
+
+.profile-table th,
+.profile-table td{
+    font-size:14px !important;
+}
+
+.menu-title{
+    font-size:18px !important;
+}
+
+.menu-item{
+    font-size:14px !important;
+}
+
+/* PROFILE CARD */
+.profile-card{
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,.08);
+}
+
+.profile-header{
+    background: #fff;
+    padding: 20px 25px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.profile-body{
+    padding: 25px;
+}
+
+.profile-footer{
+    background: #f8f9fa;
+    padding: 15px;
+    text-align: center;
+    color: #6c757d;
+    border-top: 1px solid #e9ecef;
+}
+
+.profile-photo{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #406fba;
+    display:block;
+    margin:0 auto;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.profile-left{
+    text-align: center;
+}
+
+.profile-table th{
+    width: 220px;
+    background: #f8f9fa;
+}
+
+.btn-profile{
+    background: #406fba;
+    color: #fff;
+}
+
+.btn-profile:hover{
+    background: #31589a;
+    color: #fff;
+}
+
+
+
+
+/* aktif pada fitur yang ingin di klik */
+.sidebar .nav-item .nav-link.active {
+  color: #f38b1c !important;
+  border-radius: 5px;
+}
+/* supaya hover tidak mengganggu active */
+.sidebar .nav-item .nav-link.active:hover {
+  background-color: #f38b1c !important;
+  color: #f38b1c !important;
+}
+
+
+.table {
+  font-size: 20x; /*mengatur ukuran tabel*/
+}
+
+/*scroll tabel*/
+.scroll-table thead th {
+    position: sticky;
+    top: 0;
+    background: #f8f9fc; /* samakan dengan warna header */
+    z-index: 1;
+}
+
+
+
+
+  /* Tambah data/pengajuan */
+    .main {
+      flex: 1;
+      padding: 30px; /*ukuran form*/
+    }
+
+    .topbar-tambah{
+      background: #406fba;
+      color: white;
+      padding: 10px 15px;
+      border: 3px solid #e0e0e0; /*bayangan judul form*/
+      border-radius: 8px 8px 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .form-container {
+      background: white;
+      border: 2px solid #e0e0e0; /*bayangan di form*/
+      border-radius: 8px;
+      padding: 15px;
+      margin-top: 5px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    .date-time {
+      display: flex;
+      gap: 15px;
+    }
+
+    .date-time input {
+      flex: 1;
+    }
+
+    .submit-btn {
+      background: #FF8C00;
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .submit-btn:hover {
+      background: #FF7A00;
+    }
+
+    .mascot {
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+      width: 180px;
+    }
+
+
+
+
+/* CSS KALENDER (diperkecil & lebih clean) */
+.calendar {
+    width: 100%;
+    padding: 15px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.calendar-header h3 {
+    margin: 0;
+    font-size: 24px; /* Diperkecil dari 38px */
+    font-weight: 600;
+    color: #374151;
+}
+
+.nav-btn {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.nav-btn:hover {
+    background: #1d4ed8;
+    transform: scale(1.08);
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    width: 100%;
+}
+
+.calendar-day-name {
+    text-align: center;
+    font-weight: 700;
+    color: #666;
+    padding: 6px 0;
+    font-size: 13px;
+}
+
+.calendar-day {
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 15px; /* Diperkecil */
+    font-weight: 600;
+    transition: all 0.2s;
+    cursor: pointer;
+    user-select: none;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+}
+
+.calendar-day:hover {
+    background: #dbeafe;
+    transform: scale(1.08);
+}
+
+.calendar-day.empty {
+    background: #f1f5f9;
+    cursor: default;
+    color: #94a3b8;
+}
+
+.empty:hover {
+    transform: none;
+    background: #f1f5f9;
+}
+
+/* Warna status booking (bisa dikembangkan lebih lanjut) */
+.full {
+    background: #fee2e2 !important;
+    color: #dc2626 !important;
+    cursor: not-allowed !important;
+}
+
+/* Sisanya pakai CSS lama Anda */
+.card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+}
+
+
+
+body{
+    font-family: Arial, sans-serif;
+    font-size:12px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:5px;
+}
+
+p{
+    text-align:center;
+}
+
+.laporan-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.laporan-table th{
+    border:1px solid #000;
+    padding:8px;
+    background:#f2f2f2;
+}
+
+.laporan-table td{
+    border:1px solid #000;
+    padding:8px;
+}
+
+.footer{
+    margin-top:30px;
+    text-align:right;
+}
+
+/* MENU TAMBAHAN */
+
+.menu-section{
+    margin-top:25px;
+}
+
+.menu-title{
+    color:#1e3a8a;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.profile-menu{
+    border:1px solid #e3e6f0;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.menu-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    text-decoration:none;
+    color:#333;
+    border-bottom:1px solid #e3e6f0;
+    transition:.3s;
+}
+
+.menu-item:last-child{
+    border-bottom:none;
+}
+
+.menu-item:hover{
+    background:#eef4ff;
+    color:#0d6efd;
+    text-decoration:none;
+}
+
+.menu-left{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.menu-left i{
+    color:#0d6efd;
+    width:20px;
+    text-align:center;
+}
+
+
+
+
+
+
+.calendar-grid{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:5px;
+}
+
+.calendar-day-name{
+    text-align:center;
+    font-weight:bold;
+    padding:8px;
+}
+
+.calendar-day{
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.calendar-day.empty{
+    background:transparent;
+    cursor:default;
+}
+
+.available{
+    background:#d4edda;
+    color:#155724;
+}
+
+.partial-booking{
+    background:#fff3cd;
+    color:#856404;
+}
+
+.full-booking{
+    background:#f8d7da;
+    color:#721c24;
+}
+
+.full-booking:hover{
+    background:#dc3545;
+    color:white;
+}
+
+
+
+
+
+/* NOTIFIKASI */
+
+.notif-scroll{
+    width:380px;
+    max-height:280px; /* sekitar 3 notifikasi terlihat */
+    overflow-y:auto !important;
+    overflow-x:hidden;
+}
+
+.notif-scroll::-webkit-scrollbar{
+    width:6px;
+}
+
+.notif-scroll::-webkit-scrollbar-thumb{
+    background:#c5c5c5;
+    border-radius:10px;
+}
+
+/* NOTIFIKASI BELUM DIBACA */
+.topbar .dropdown-list .dropdown-item.notif-belum{
+    background:#e9ecef !important;
+    font-weight:bold !important;
+    border-left:4px solid #0d6efd !important;
+}
+
+/* NOTIFIKASI SUDAH DIBACA */
+.topbar .dropdown-list .dropdown-item.notif-sudah{
+    background:#ffffff !important;
+    border-left:4px solid transparent !important;
+    font-weight:normal !important;
+}
+
+.topbar .dropdown-list .dropdown-item.notif-sudah span{
+    color:#6c757d !important;
+}
+
+.topbar .dropdown-list .dropdown-item.notif-sudah .small{
+    color:#9aa0a6 !important;
+}
+
+/* HOVER */
+.topbar .dropdown-list .dropdown-item.notif-belum:hover{
+    background:#dfe3e6 !important;
+}
+
+.topbar .dropdown-list .dropdown-item.notif-sudah:hover{
+    background:#f8f9fa !important;
+}
+
+.notif-dot{
+    display:inline-block;
+    width:8px;
+    height:8px;
+    background:#0d6efd;
+    border-radius:50%;
+    margin-left:8px;
+}
+
+.dropdown-item{
+    padding:12px 15px;
+}
+.dropdown-list.notif-scroll{
+    height:280px !important;
+    max-height:280px !important;
+    overflow-y:auto !important;
+    overflow-x:hidden !important;
+}
